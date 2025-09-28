@@ -423,7 +423,9 @@ export default function Dashboard() {
                 borderRadius: 12,
                 color: isActive ? '#ffffff' : '#2a5934',
                 background: isActive ? 'rgba(46, 128, 74, 0.9)' : 'transparent',
+                fontWeight: mobileOpen ? 700 : 400,  // Add this line for conditional bold
               })}
+              
             >
               {path.charAt(0).toUpperCase() + path.slice(1)}
             </NavLink>
